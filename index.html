@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>To-Do Dashboard</title> 
+<link rel="stylesheet" href="style.css"/> 
+</head> 
+<body> 
+<div class="dashboard-container">
+ <!-- Sidebar --> 
+<aside class="sidebar">
+<h2 class="logo">📝 ToDoApp</h2> 
+<nav> 
+<ul>
+ <li><a href="#home">🏠 Home</a></li> 
+ <li><a href="#tasks">📋 Tasks</a></li> 
+ <li><a href="#profile">👤 Profile</a></li> 
+ <li><a href="#settings">⚙ Settings</a></li> 
+</ul> 
+</nav> 
+<button class="toggle-mode" onclick="toggleDarkMode()">🌙 Dark Mode</button> 
+</aside> 
+<!-- Main Content --> 
+ 
+<main class="main"> 
+<header>Welcome to the Dashboard</header> 
+<!-- Home Section --> 
+<section id="home" class="section"> 
+<h1>Dashboard</h1> 
+<p>Welcome to the Dashboard</p>
+</section> 
+<!-- Tasks Section --> 
+<section id="tasks" class="section"> 
+<h2>Your Tasks</h2> 
+<!-- Cards --> 
+<div class="cards"> 
+<div class="card" id="total-tasks"> 
+<h3>Total Tasks</h3> 
+<p>0</p> </div> 
+<div class="card" id="completed-tasks"> 
+<h3>Completed</h3> 
+<p>0</p> </div> 
+<div class="card" id="pending-tasks"> 
+<h3>Pending</h3> 
+<p>0</p>
+</div> 
+</div> 
+<!-- Input and List --> 
+<div class="todo-input"> 
+<input type="text" id="task-input" placeholder="Add a new task..." /> 
+<button onclick="addTask()">Add Task</button> 
+</div> 
+<ul id="task-list"></ul> 
+</section> 
+<footer> © All Copyright 2025 </footer> 
+</main> 
+</div> 
+<script src="script.js"></script> 
+</body> 
+</html>
